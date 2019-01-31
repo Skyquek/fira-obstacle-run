@@ -1,0 +1,15 @@
+<launch>
+    <arg name="configuration_directory" default="$(find obstacle_run)/config"/>
+    <arg name="motion_directory" default="$(find obstacle_run)/motion"/>
+
+    <!-- robotis op3 manager -->
+    <include file="$(find op3_manager)/launch/op3_manager.launch"/>
+
+    <!-- vision -->
+    <include file="$(find vision)/launch/vision.launch"/>
+
+    <node name="obstacle_run_node" pkg="obstacle_run" type="obstacle_run_node.py" output="screen">
+        <param name="configuration_directory" type="str" value="$(arg configuration_directory)"/>
+        <param name="motion_directory" type="str" value="$(arg motion_directory)"/>
+    </node>
+</launch>

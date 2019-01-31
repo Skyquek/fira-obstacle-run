@@ -1,0 +1,61 @@
+{
+  "blue_obstacle": {
+    "max_area": 100000, 
+    "min_area": 5000, 
+    "output_colour": [
+      255, 
+      0, 
+      0
+    ], 
+    "threshold": [
+      0,
+      0, 
+      0
+    ], 
+    "value": [
+      0,
+      0, 
+      0
+    ]
+  }, 
+  "camera_index": 0, 
+  "red_obstacle": {
+    "max_area": 100000, 
+    "min_area": 5000, 
+    "output_colour": [
+      0, 
+      0, 
+      255
+    ], 
+    "threshold": [
+      0,
+      0,
+      0
+    ], 
+    "value": [
+      0,
+      0,
+      0
+    ]
+  }, 
+  "yellow_obstacle": {
+    "max_area": 100000, 
+    "min_area": 5000, 
+    "output_colour": [
+      0, 
+      255, 
+      255
+    ], 
+    "threshold": [
+      0,
+      0, 
+      0
+    ], 
+    "value": [
+      0,
+      0, 
+      0
+    ]
+  }, 
+  "resized_frame_height": 320
+}

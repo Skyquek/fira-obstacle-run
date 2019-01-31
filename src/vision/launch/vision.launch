@@ -1,0 +1,10 @@
+<launch>
+    <arg name="configuration_directory" default="$(find vision)/config"/>
+
+    <!-- Camera Settings -->
+    <include file="$(find op3_camera_setting_tool)/launch/op3_camera_setting_tool.launch" />
+
+    <node name="vision_node" pkg="vision" type="vision_node.py" output="screen">
+        <param name="configuration_directory" type="str" value="$(arg configuration_directory)"/>
+    </node>
+</launch>

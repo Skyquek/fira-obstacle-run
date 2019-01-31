@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>obstacle_run</name>
+  <version>0.1.1</version>
+  <description>The obstacle_run package</description>
+
+  <maintainer email="luncf@myumanitoba.ca">Andy Lun</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <url type="website">http://wiki.ros.org/op3_demo</url>
+  <url type="emanual">http://emanual.robotis.com/docs/en/platform/op3/introduction/</url>
+  <url type="repository">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo</url>
+  <url type="bugtracker">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/issues</url>
+
+  <author email="kmjung@robotis.com">Kayman</author>
+  <author email="pyo@robotis.com">Pyo</author>
+  <author email="luncf@myumanitoba.ca">Andy Lun</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>roslib</depend>
+
+  <depend>std_msgs</depend>
+  <depend>robotis_controller_msgs</depend>
+  <depend>op3_walking_module_msgs</depend>
+  <depend>op3_action_module_msgs</depend>
+  
+  <depend>cmake_modules</depend>
+  <depend>robotis_math</depend>
+  <depend>boost</depend>
+  <depend>eigen</depend>
+
+  <depend>op3_manager</depend>
+
+  <depend>vision</depend>
+
+  <build_export_depend>message_generation</build_export_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+</package>
